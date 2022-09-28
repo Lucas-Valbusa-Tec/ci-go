@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  ci-go:
+    build: .
+    container_name: ci-go
+    volumes:
+      - ./:/usr/src/app
+    tty: true
